@@ -1,0 +1,7 @@
+{
+  "name": "Miit-BSIT4",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
