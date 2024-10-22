@@ -1,15 +1,16 @@
 <template>
     <ion-page>
-        <ion-header>
-         <ion-Toolbar>
-            <ion-buttons slot="start">
-                <ion-back-button></ion-back-button>
-            </ion-buttons>
-         <ion-title>Sign in Page</ion-title>
-         </ion-Toolbar>
-        </ion-header>
+        <ion-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <img src="../../assets/ionic-logo.webp" alt="" width="180">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-content>
         <ion-content class="ion-padding">
-            <div>
+          <div style="padding-top: -1;">
   <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -27,7 +28,7 @@
         </ion-content>
         <ion-footer>
          <ion-Toolbar>
-            <button slot="end" class="btn btn-primary w-45">sign in</button>
+            <button slot="end" class="btn btn-primary w-50">sign in</button>
          </ion-Toolbar>
         </ion-footer>
     </ion-page>

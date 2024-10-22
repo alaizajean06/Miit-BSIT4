@@ -10,7 +10,7 @@
         </ion-content>
         <ion-footer>
          <ion-Toolbar>
-            <button slot="end" class="btn btn-primary w-45" @click="nextScreen()">Next</button>
+            <button slot="end" class="btn btn-primary w-50" @click="nextScreen()">Next</button>
          </ion-Toolbar>
         </ion-footer>
     </ion-page>
