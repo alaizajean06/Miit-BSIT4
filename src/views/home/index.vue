@@ -40,6 +40,28 @@
             </p>
           </ion-label>
         </ion-item>
+        <ion-toolbar>
+          <ion-title> Prefinal Activity </ion-title>
+        </ion-toolbar>
+
+        <ion-item :button="true" @click="swiper()">
+          <ion-label>
+            <h2 class="text-bold">Act 1: Swiper Slider</h2>
+            <p>Learn how to implement slider</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="swiperloop()">
+          <ion-label>
+            <h2 class="text-bold">Act 2 : For Loop with components</h2>
+            <p>Learn how to implement loop around reusable components</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="localstorage()">
+          <ion-label>
+            <h2 class="text-bold">Act 3 : Local Device Storage</h2>
+            <p>Learn how to implement device storage</p>
+          </ion-label>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-page>
@@ -89,7 +111,16 @@ export default defineComponent({
       this.$router.push('/reorder');
     },
     async floatingactionbuttonScreen() {
-      this.$router.push('/floatingactionbutton');
+      this.$router.push('/float');
+    },
+    async swiper() {
+      this.$router.push('/tabs/swiper');
+    },
+    async swiperloop() {
+      this.$router.push('/tabs/swiperLoop');
+    },
+    async localstorage() {
+      this.$router.push('/tabs/localStorage');
     },
   },
 });

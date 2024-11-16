@@ -32,11 +32,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'reorder',
     component: () => import('@/views/home/reorder/index.vue'),
   },
-  {
-    path: '/float',
-    name: 'float',
-    component: () => import('@/views/home/floatingactionbutton/index.vue'),
-  },
 
   {
     path: '/tabs/',
@@ -46,7 +41,22 @@ const routes: Array<RouteRecordRaw> = [
         path: 'home',
         component: () => import('@/views/home/index.vue'),
       },
-      
+      {
+        path: 'float',
+        component: () => import('@/views/home/floatingactionbutton/index.vue'),
+      },
+      {
+        path: 'swiper',
+        component: () => import('@/views/Swiper/index.vue'),
+      },
+      {
+        path: 'swiperLoop',
+        component: () => import('@/views/Swiper-Loop/index.vue'),
+      },
+      {
+        path: 'localStorage',
+        component: () => import('@/views/Local-Storage/index.vue'),
+      },
     ],
   },
 ];
